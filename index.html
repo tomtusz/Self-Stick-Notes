@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Memo!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
+
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+
+        
+    </head>
+    <body>
+
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Meno</a>
+        </nav>
+        
+       
+        <div class="container">
+            <div class="row js--memo-container">
+                <div class="col-sm-12 col-lg-4 col-md-6 js--memo-add-new" >
+                    <div class="card">
+                        <div class="card-body">
+                            <form  class="js--add-memo-form" action="">
+                                <div class="input-group">
+                                    <input type="text" name="memoTitle" class="form-control memoTitle" placeholder="Tytuł">
+                                    <div class="invalid-feedback">
+                                        Min 3 znaki max 10 znaków.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        OK.
+                                    </div>    
+                                </div>    
+                                <div class="input-group">                        
+                                    <textarea 
+                                        name="memoText" 
+                                        class="form-control memoText" 
+                                        placeholder="opis (min 3 znaki max 60 znaków)..."></textarea>
+                                    <div class="invalid-feedback">
+                                        Min 3 znaki max 60 znaków.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        OK.
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary js--add-memo-btn" disabled>
+                                    +
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+       
+    </body>
+</html>
+
+
+
